@@ -13,6 +13,6 @@ class ScheduledTrigger {
 
   @Scheduled(fixedRate = 30_000)
   public void trigger() {
-    testService.serviceApi1();
+    testService.serviceApi();
   }
 }

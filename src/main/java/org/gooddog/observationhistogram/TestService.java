@@ -35,7 +35,7 @@ public class TestService {
   }
 
   @Observed(name = "test.service.response.time.seconds")
-  public void serviceApi1() {
+  public void serviceApi() {
     long responseTimeMillis = (long) (serviceResponseTimeSecondsGenerator.normalRandom() * 1_000);
     log.debug("sleeping for {} milliseconds", responseTimeMillis);
     sleep(Duration.ofMillis(responseTimeMillis));

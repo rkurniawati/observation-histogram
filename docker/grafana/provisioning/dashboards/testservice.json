@@ -515,6 +515,19 @@
           "legendFormat": "0.75",
           "range": true,
           "refId": "C"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheus"
+          },
+          "editorMode": "code",
+          "expr": "histogram_quantile(0.99, test_service_response_time_seconds_bucket{job=\"spring-app\"})",
+          "hide": false,
+          "instant": false,
+          "legendFormat": "0.99",
+          "range": true,
+          "refId": "D"
         }
       ],
       "title": "Response Time Quantiles",
@@ -685,13 +698,13 @@
     "list": []
   },
   "time": {
-    "from": "now-30m",
+    "from": "now-15m",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "browser",
   "title": "Test Service Metrics",
   "uid": "fdxzscl2f99mod",
-  "version": 1,
+  "version": 2,
   "weekStart": ""
 }
