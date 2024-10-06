@@ -1,6 +1,6 @@
 # Example Spring Boot app with an Observation that publishes Prometheus histogram
 
-This is an example Spring Boot application that demonstrates how you can create and publish Prometheus histogram from the `Timer` in Micrometer `Observation`. More information can be found in this article.
+This is an example Spring Boot application that demonstrates how you can create and publish Prometheus histogram from the `Timer` in Micrometer `Observation`. More information can be found in this [article](https://medium.com/@ruth.kurniawati/enabling-prometheus-histogram-metrics-in-spring-boots-micrometer-observations-1785fe902283).
 
 ## Requirements
 
